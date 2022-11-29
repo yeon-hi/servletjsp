@@ -11,8 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 
 public class PostController extends HttpServlet {
 	
-
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	//클라이언트가 POST방식으로 요청할 때 마다 콜백
+	//역할: 요청 처리
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.getRequestDispatcher("/WEB-INF/views/exam02/post.jsp").forward(request, response);;
 	}
 
