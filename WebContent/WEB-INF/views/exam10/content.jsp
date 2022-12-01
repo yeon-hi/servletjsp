@@ -5,13 +5,12 @@
 
 <div class="card m-2">
 	<div class="card-header">
-		useCookie.jsp
+		content.jsp
 	</div>
 	<div class="card-body">
-		useremail: ${useremail}
-		userid: ${userid}
+		<a href="/servletjsp/exam10/ExceptionHandlingController" class="btn btn-info btn-sm">try-catch이용</a>
+		<a href="/servletjsp/exam10/NoExceptionHandlingController" class="btn btn-info btn-sm">web.xml</a>
 	</div>
 </div>
-
 
 <%@ include file="/WEB-INF/views/common/footer.jsp" %>

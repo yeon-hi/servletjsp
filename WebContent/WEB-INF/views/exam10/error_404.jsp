@@ -5,13 +5,11 @@
 
 <div class="card m-2">
 	<div class="card-header">
-		useCookie.jsp
+		error.jsp
 	</div>
 	<div class="card-body">
-		useremail: ${useremail}
-		userid: ${userid}
+		요청하신 자원이 없습니다. URL을 확인해주세요.
 	</div>
 </div>
-
 
 <%@ include file="/WEB-INF/views/common/footer.jsp" %>

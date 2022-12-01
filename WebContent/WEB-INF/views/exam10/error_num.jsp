@@ -5,13 +5,11 @@
 
 <div class="card m-2">
 	<div class="card-header">
-		useCookie.jsp
+		error.jsp
 	</div>
 	<div class="card-body">
-		useremail: ${useremail}
-		userid: ${userid}
+		숫자를 입력하지 않았어요. 다시 폼으로 돌아가서 숫자를 입력하세요.
 	</div>
 </div>
-
 
 <%@ include file="/WEB-INF/views/common/footer.jsp" %>

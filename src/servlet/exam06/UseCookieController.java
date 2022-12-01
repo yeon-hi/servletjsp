@@ -17,7 +17,7 @@ public class UseCookieController extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//클라이언트가 보낸 쿠키들을 얻기
 		Cookie[] cookies = request.getCookies();
-		/*for(Cookie cookie : cookies) {
+		for(Cookie cookie : cookies) {
 			//쿠키 이름 읽기
 			String name = cookie.getName();
 			if(name.equals("useremail")) {
@@ -26,20 +26,16 @@ public class UseCookieController extends HttpServlet{
 				System.out.println("useremail: "+value);
 				//jsp에서 읽을 수 있도록 설정
 				request.setAttribute("useremail", value);
-			}
-		}*/
-		
-		for(Cookie cookie : cookies) {
-			//쿠키 이름 읽기
-			String name = cookie.getName();
-			if(name.equals("userid")) {
+			} else if(name.equals("userid")) {
 				//쿠키값 읽기
 				String value = cookie.getValue();
-				System.out.println("userid: "+value);
+				
 				//jsp에서 읽을 수 있도록 설정
 				request.setAttribute("userid", value);
 			}
 		}
+		
+		
 		
 		
 		
